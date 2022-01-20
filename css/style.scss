@@ -338,6 +338,26 @@ header {
         width: 90%;
         margin: 0 auto;
 
+        .contact--title {
+            position: relative;
+            padding-bottom: 100px;
+
+            img {
+                width: 200px;
+                position: absolute;
+                z-index: 0;
+                top: -60px;
+                left: -60px;
+            }
+
+
+            h2 {
+                position: relative;
+                z-index: 1;
+                color: $primaryColor !important;
+            }
+        }
+
 
         &--form {
             
@@ -389,10 +409,22 @@ header {
 
                 .submit-btn {
                     cursor: pointer;
+                    border: none;
                     width: 70%;
                     grid-column: 3;
                     grid-row: 3;
+                    padding: 10px 20px !important;
+                    background: $primaryColor !important;
+                    color: $accentColor!important;
+                }
+
+                .submit-btn:hover {
+                    background: $accentColor!important;
+                    color: $primaryColor !important;
                 }
             }      
         }
     }
+
+
+    /* FOOTER */
