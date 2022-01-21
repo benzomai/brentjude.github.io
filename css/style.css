@@ -580,7 +580,7 @@ footer .links ul a:hover {
             flex-direction: column;
   }
   .about--left {
-    width: 40%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -593,7 +593,7 @@ footer .links ul a:hover {
             justify-content: center;
   }
   .about--left h2 {
-    font-size: 2.5vw;
+    font-size: 27px;
   }
   .about--left .arrow-line {
     position: relative;
@@ -630,6 +630,7 @@ footer .links ul a:hover {
     margin-top: 50px;
     text-decoration: none;
     color: black;
+    font-size: 16px;
   }
   .about--left .arrow-southeast {
     position: relative;
@@ -651,12 +652,12 @@ footer .links ul a:hover {
   }
   .about--right {
     position: relative;
-    width: 60%;
-    font-size: 1.2vw;
+    width: 100%;
+    font-size: 14px;
     letter-spacing: 1px;
     line-height: 156.5%;
-    padding: 100px 0;
-    padding-left: 100px;
+    padding: 20px 0;
+    padding-left: 0px;
   }
   .about--right p {
     position: inherit;
@@ -666,22 +667,22 @@ footer .links ul a:hover {
   }
   .about--right img {
     position: absolute;
-    width: 20vw;
-    top: 50px;
-    left: -3vw;
-    z-index: 0;
+    width: 60vw;
+    top: -200px;
+    left: -25vw;
+    z-index: -1;
   }
   /* PORTFOLIO */
   .portfolio {
     width: 90%;
-    margin: 100px auto;
+    margin: 150px auto;
   }
   .portfolio--title {
     position: relative;
   }
   .portfolio--title h2 {
     position: relative;
-    font-size: 2.5vw;
+    font-size: 27px;
     z-index: 1;
   }
   .portfolio--title img {
@@ -691,19 +692,18 @@ footer .links ul a:hover {
   }
   .portfolio--nav {
     margin-top: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
     padding: 0 15vw;
     padding-bottom: 10px;
     border-bottom: 1px solid #FF9A40;
   }
   .portfolio--nav label {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 10px;
     cursor: pointer;
   }
   .portfolio--nav input {
@@ -736,7 +736,7 @@ footer .links ul a:hover {
   }
   .portfolio--grid .grid-item,
   .portfolio--grid .grid-sizer {
-    width: 30%;
+    width: 40%;
   }
   .portfolio--grid .grid-item {
     cursor: pointer;
