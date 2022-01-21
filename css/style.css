@@ -323,6 +323,11 @@ header {
       align-content: space-between;
 }
 
+.portfolio--grid a {
+  text-decoration: none;
+  color: black;
+}
+
 .portfolio--grid .grid-item,
 .portfolio--grid .grid-sizer {
   width: 30%;

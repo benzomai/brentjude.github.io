@@ -312,6 +312,11 @@ header {
             flex-wrap: wrap;
             align-content: space-between;
 
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
             .grid-item,
             .grid-sizer {
                 width: 30%;
