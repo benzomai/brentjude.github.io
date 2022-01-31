@@ -29,6 +29,11 @@ $checkboxes.change( function() {
     $container.isotope({ filter: filterValue })
 });
 
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+  });  
+
 //contact form jquery
 $( '.js-input' ).keyup(function() {
     if( $(this).val() ) {
