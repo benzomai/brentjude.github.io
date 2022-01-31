@@ -8,6 +8,11 @@ var $container = $('#container').isotope({
     }
 });
 
+// layout Isotope after each image loads
+$container.imagesLoaded().progress( function() {
+    $container.isotope('layout');
+  });  
+
 // filter with selects and checkboxes
 var $checkboxes = $('.portfolio--nav input');
 
@@ -29,10 +34,7 @@ $checkboxes.change( function() {
     $container.isotope({ filter: filterValue })
 });
 
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-    $grid.isotope('layout');
-  });  
+
 
 //contact form jquery
 $( '.js-input' ).keyup(function() {
