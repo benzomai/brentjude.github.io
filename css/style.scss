@@ -86,6 +86,8 @@ header {
     justify-content: space-between;  
 }
 
+
+
 .hero-section {
     height: 98vh;
     width: 100%;
@@ -114,8 +116,23 @@ header {
         width: 60vw;
         align-self: flex-end;
         margin-left: 2vw;
+        
+        .skills {
+            width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .inner-skill {
+            width: 200%;
+            display: flex;
+            flex-direction: flex;
+            animation: marquee 10s linear infinite;
+        }
 
         ul {
+            width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 5px;
@@ -123,6 +140,12 @@ header {
             padding: 0;
             margin: 0;
             margin-bottom: 25vh;
+
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
 
         ul li {
